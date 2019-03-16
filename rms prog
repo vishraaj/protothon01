@@ -1,0 +1,14 @@
+import math
+
+a=[]
+b=[]
+a=(input("enter the numbers").split(','))
+a=[float(i)for i in a]
+n=len(a)
+b=[i*i for i in a]
+sum=0
+for i in b:
+    sum=i+sum
+mean=sum/n
+c=math.sqrt(mean)
+print("The RMS value of given numbers is",c)
