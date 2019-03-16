@@ -1,0 +1,24 @@
+def add(a,b):
+        sum1=a+b
+        print("the sum is :", sum1)
+def sub(a,b):
+        diff=a-b
+        print("the difference is:",diff)
+def mul(a,b):
+        pro=a*b
+        print("the product is :",pro)
+def div(a,b):
+        quo=a/b
+        print("the quotient is:",quo)
+
+def operation(choice):
+    oper={1:add(a,b),2:sub(a,b),3:mul(a,b),4:div(a,b)}
+    oper.get(choice)
+    print(type(oper))
+
+
+print("The available functions are:\n1.ADD\n2.SUB\n3.MUL\n4.DIV ")
+a= float(input("Enter the first number"))
+b= float(input("Enter the second number"))
+choice= input("enter your choice")
+operation(choice)
