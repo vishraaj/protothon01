@@ -1,0 +1,12 @@
+from itertools import permutations
+import nltk
+nltk.download('words')
+from nltk.corpus import words
+b=permutations('PROTOSEM')
+a=[]
+for i in list(b):
+    a.append(''.join(i))
+for i in a:
+    while (i in words.words()):
+        print(i)
+        break
